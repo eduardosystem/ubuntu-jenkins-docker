@@ -45,7 +45,7 @@ $ sudo systemctl start docker
 ```
 siguiente
 ```
-$ docker run -dp 8080:8090 ubuntu-jenkins
+$ docker run -dp 8080:8080 ubuntu-jenkins
 ```
 
 (see official link above for details)
