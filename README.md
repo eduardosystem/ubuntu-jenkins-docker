@@ -34,4 +34,18 @@ also use:
 RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 ```
 
+Para crear la imagen use el siguiente comando:
+```
+$ sudo docker build -t ubuntu-jenkins .
+```
+Usted puede agregar cualquier nombre a la imagen, en este caso es Ubuntu-jenkins. y al final tiene que agregar el punto "."
+Luego lo inicie el contenedor con el siguiente comando, pero primero tiene que tener activo el servicio docker
+```
+$ sudo systemctl start docker
+```
+siguiente
+```
+$ docker run -dp 8080:8090 ubuntu-jenkins
+```
+
 (see official link above for details)
